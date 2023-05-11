@@ -392,3 +392,447 @@ Compilation Error
 [0m14:39:56.728689 [debug] [MainThread]: Command `dbt compile` failed at 14:39:56.728414 after 1.22 seconds
 [0m14:39:56.730653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f8dbf4a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f8b96c250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1f8b96c160>]}
 [0m14:39:56.732245 [debug] [MainThread]: Flushing usage events
+[0m14:40:41.607778 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca5c8d0a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca5b3978b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca5b397820>]}
+
+
+============================== 14:40:41.611758 | 01979dff-1fd6-4479-8147-0b19eb51490d ==============================
+[0m14:40:41.611758 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:40:41.613701 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:40:41.616057 [info ] [MainThread]: dbt version: 1.5.0
+[0m14:40:41.617253 [info ] [MainThread]: python version: 3.10.6
+[0m14:40:41.618571 [info ] [MainThread]: python path: /usr/bin/python3
+[0m14:40:41.619829 [info ] [MainThread]: os info: Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m14:40:41.621065 [info ] [MainThread]: Using profiles.yml file at /mnt/c/Users/sk8pr/.dbt/profiles.yml
+[0m14:40:41.622230 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/sk8pr/.dbt/dbt_project.yml
+[0m14:40:41.623407 [info ] [MainThread]: Configuration:
+[0m14:40:41.719406 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:40:41.762263 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:40:41.764419 [info ] [MainThread]: Required dependencies:
+[0m14:40:41.766379 [debug] [MainThread]: Executing "git --help"
+[0m14:40:41.769866 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:40:41.771640 [debug] [MainThread]: STDERR: "b''"
+[0m14:40:41.773167 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:40:41.774623 [info ] [MainThread]: Connection:
+[0m14:40:41.776128 [info ] [MainThread]:   host: localhost
+[0m14:40:41.777488 [info ] [MainThread]:   port: 5433
+[0m14:40:41.778927 [info ] [MainThread]:   user: postgres
+[0m14:40:41.780414 [info ] [MainThread]:   database: films
+[0m14:40:41.781846 [info ] [MainThread]:   schema: public
+[0m14:40:41.783258 [info ] [MainThread]:   search_path: None
+[0m14:40:41.784812 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:40:41.786452 [info ] [MainThread]:   sslmode: None
+[0m14:40:41.788232 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:40:41.789721 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:40:41.791055 [debug] [MainThread]: On debug: select 1 as id
+[0m14:40:41.792398 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:40:41.809450 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m14:40:41.811827 [debug] [MainThread]: On debug: Close
+[0m14:40:41.813165 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:40:41.814627 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:40:41.816454 [debug] [MainThread]: Command `dbt debug` succeeded at 14:40:41.816240 after 0.23 seconds
+[0m14:40:41.817655 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:40:41.818821 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca5c8d0a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca5c1bfa30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fca5b20a740>]}
+[0m14:40:41.820076 [debug] [MainThread]: Flushing usage events
+[0m14:40:46.230503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518d408a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518beab9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518beab970>]}
+
+
+============================== 14:40:46.234606 | f6946e1b-008a-47f4-9c70-d897668453d4 ==============================
+[0m14:40:46.234606 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:40:46.236072 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:40:46.369972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f6946e1b-008a-47f4-9c70-d897668453d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518beaba90>]}
+[0m14:40:46.394158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f6946e1b-008a-47f4-9c70-d897668453d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518bdca5f0>]}
+[0m14:40:46.413328 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m14:40:46.422755 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:40:46.424418 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f6946e1b-008a-47f4-9c70-d897668453d4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518b867d00>]}
+[0m14:40:47.345906 [debug] [MainThread]: 1699: static parser successfully parsed films__transfo.sql
+[0m14:40:47.423668 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.omar_test.films__transfo' (models/films__transfo.sql) depends on a node named 'films.title_basics_truncated' which was not found
+[0m14:40:47.426020 [debug] [MainThread]: Command `dbt run` failed at 14:40:47.425789 after 1.22 seconds
+[0m14:40:47.427624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518d408a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518b5582b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f518b558190>]}
+[0m14:40:47.429328 [debug] [MainThread]: Flushing usage events
+[0m14:42:39.563906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f48a14a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f474cb940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f474cb910>]}
+
+
+============================== 14:42:39.567993 | f0ef24cf-7a4a-4870-b900-dcb181de4c2f ==============================
+[0m14:42:39.567993 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:42:39.569723 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:42:39.704799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f0ef24cf-7a4a-4870-b900-dcb181de4c2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f474cba30>]}
+[0m14:42:39.729303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f0ef24cf-7a4a-4870-b900-dcb181de4c2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f473e98a0>]}
+[0m14:42:39.748430 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m14:42:39.757981 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:42:39.759400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f0ef24cf-7a4a-4870-b900-dcb181de4c2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f46e83d60>]}
+[0m14:42:40.671775 [debug] [MainThread]: 1699: static parser successfully parsed films__transfo.sql
+[0m14:42:40.736195 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.omar_test.films__transfo' (models/films__transfo.sql) depends on a node named 'films.title_basics_truncated' which was not found
+[0m14:42:40.738771 [debug] [MainThread]: Command `dbt run` failed at 14:42:40.738550 after 1.20 seconds
+[0m14:42:40.740671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f48a14a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f46b69c00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3f46b69c90>]}
+[0m14:42:40.742640 [debug] [MainThread]: Flushing usage events
+[0m14:42:52.942127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f3212ca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f30c9b9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f30c9b9a0>]}
+
+
+============================== 14:42:52.946278 | b9bfd303-a36a-4dd0-9f2f-ffcaa1943de8 ==============================
+[0m14:42:52.946278 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:42:52.947859 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:42:53.085407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b9bfd303-a36a-4dd0-9f2f-ffcaa1943de8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f30c9bac0>]}
+[0m14:42:53.109740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b9bfd303-a36a-4dd0-9f2f-ffcaa1943de8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f30bb9930>]}
+[0m14:42:53.129213 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m14:42:53.138181 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:42:53.139606 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b9bfd303-a36a-4dd0-9f2f-ffcaa1943de8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f30bf62c0>]}
+[0m14:42:54.052742 [debug] [MainThread]: 1699: static parser successfully parsed films__transfo.sql
+[0m14:42:54.114600 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.omar_test.films__transfo' (models/films__transfo.sql) depends on a node named 'films.title_basics_truncated' which was not found
+[0m14:42:54.116893 [debug] [MainThread]: Command `dbt run` failed at 14:42:54.116689 after 1.20 seconds
+[0m14:42:54.118599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f3212ca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f2ff201f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9f2ff201c0>]}
+[0m14:42:54.120220 [debug] [MainThread]: Flushing usage events
+[0m14:49:28.147346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc51fca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc3cb38b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc3cb37f0>]}
+
+
+============================== 14:49:28.151690 | 9a5c460d-7d50-4a1d-93b4-2e9ed6b5d5dd ==============================
+[0m14:49:28.151690 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:49:28.153404 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:49:28.156156 [info ] [MainThread]: dbt version: 1.5.0
+[0m14:49:28.157618 [info ] [MainThread]: python version: 3.10.6
+[0m14:49:28.159012 [info ] [MainThread]: python path: /usr/bin/python3
+[0m14:49:28.160405 [info ] [MainThread]: os info: Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m14:49:28.161787 [info ] [MainThread]: Using profiles.yml file at /mnt/c/Users/sk8pr/.dbt/profiles.yml
+[0m14:49:28.163342 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/sk8pr/.dbt/dbt_project.yml
+[0m14:49:28.164857 [info ] [MainThread]: Configuration:
+[0m14:49:28.282864 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:49:28.326914 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:49:28.329116 [info ] [MainThread]: Required dependencies:
+[0m14:49:28.330909 [debug] [MainThread]: Executing "git --help"
+[0m14:49:28.334161 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:49:28.335791 [debug] [MainThread]: STDERR: "b''"
+[0m14:49:28.337275 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:49:28.338797 [info ] [MainThread]: Connection:
+[0m14:49:28.340182 [info ] [MainThread]:   host: localhost
+[0m14:49:28.341601 [info ] [MainThread]:   port: 5433
+[0m14:49:28.343127 [info ] [MainThread]:   user: postgres
+[0m14:49:28.344736 [info ] [MainThread]:   database: films
+[0m14:49:28.346210 [info ] [MainThread]:   schema: public
+[0m14:49:28.347721 [info ] [MainThread]:   search_path: None
+[0m14:49:28.349224 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:49:28.350670 [info ] [MainThread]:   sslmode: None
+[0m14:49:28.352523 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:49:28.353766 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:49:28.354894 [debug] [MainThread]: On debug: select 1 as id
+[0m14:49:28.355951 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:49:28.372841 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m14:49:28.375283 [debug] [MainThread]: On debug: Close
+[0m14:49:28.376648 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:49:28.378082 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:49:28.380158 [debug] [MainThread]: Command `dbt debug` succeeded at 14:49:28.379952 after 0.26 seconds
+[0m14:49:28.381435 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:49:28.382716 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc51fca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc4adfa30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3cc3b27f70>]}
+[0m14:49:28.384011 [debug] [MainThread]: Flushing usage events
+[0m14:49:59.691615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414de24a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414c997940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414c997880>]}
+
+
+============================== 14:49:59.695632 | 6baf3e58-8460-449b-96d1-667ab00d99cd ==============================
+[0m14:49:59.695632 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:49:59.697152 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'debug': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:49:59.830728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6baf3e58-8460-449b-96d1-667ab00d99cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414c997a30>]}
+[0m14:49:59.854579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6baf3e58-8460-449b-96d1-667ab00d99cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414c8b58a0>]}
+[0m14:49:59.873423 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m14:49:59.883294 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:49:59.884760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6baf3e58-8460-449b-96d1-667ab00d99cd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414c8efd60>]}
+[0m14:50:00.807551 [debug] [MainThread]: 1699: static parser successfully parsed films__transfo.sql
+[0m14:50:00.869811 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.omar_test.films__transfo' (models/films__transfo.sql) depends on a node named 'films.title_basics_truncated' which was not found
+[0m14:50:00.872226 [debug] [MainThread]: Command `dbt run` failed at 14:50:00.872007 after 1.21 seconds
+[0m14:50:00.874158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414de24a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414bf30190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f414bf30100>]}
+[0m14:50:00.875953 [debug] [MainThread]: Flushing usage events
+[0m14:52:30.040027 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8cb98a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8b69b9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8b69b940>]}
+
+
+============================== 14:52:30.044350 | 79aee16e-b7c5-4581-98a5-8501b0d756fe ==============================
+[0m14:52:30.044350 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:52:30.045844 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'version_check': 'True', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:52:30.180901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '79aee16e-b7c5-4581-98a5-8501b0d756fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8b69b970>]}
+[0m14:52:30.204191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '79aee16e-b7c5-4581-98a5-8501b0d756fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8b5fc760>]}
+[0m14:52:30.223749 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m14:52:30.232000 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:52:30.233433 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '79aee16e-b7c5-4581-98a5-8501b0d756fe', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8b5ff4f0>]}
+[0m14:52:31.164857 [debug] [MainThread]: 1699: static parser successfully parsed films__transfo.sql
+[0m14:52:31.227339 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.omar_test.films__transfo' (models/films__transfo.sql) depends on a node named 'films.title_basics_truncated' which was not found
+[0m14:52:31.229820 [debug] [MainThread]: Command `dbt run` failed at 14:52:31.229618 after 1.22 seconds
+[0m14:52:31.231608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8cb98a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8a933c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb8a933fd0>]}
+[0m14:52:31.233273 [debug] [MainThread]: Flushing usage events
+[0m14:53:26.975466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb66a2f0a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb668d97850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb668d977c0>]}
+
+
+============================== 14:53:26.979911 | 14abeea2-86e9-479e-977d-8be02665e5a6 ==============================
+[0m14:53:26.979911 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:53:26.981635 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:53:26.984258 [info ] [MainThread]: dbt version: 1.5.0
+[0m14:53:26.985839 [info ] [MainThread]: python version: 3.10.6
+[0m14:53:26.987410 [info ] [MainThread]: python path: /usr/bin/python3
+[0m14:53:26.989136 [info ] [MainThread]: os info: Linux-5.10.16.3-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m14:53:26.990652 [info ] [MainThread]: Using profiles.yml file at /mnt/c/Users/sk8pr/.dbt/profiles.yml
+[0m14:53:26.992259 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/sk8pr/.dbt/dbt_project.yml
+[0m14:53:26.993816 [info ] [MainThread]: Configuration:
+[0m14:53:27.106872 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:53:27.150523 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:53:27.152255 [info ] [MainThread]: Required dependencies:
+[0m14:53:27.154027 [debug] [MainThread]: Executing "git --help"
+[0m14:53:27.157095 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:53:27.158940 [debug] [MainThread]: STDERR: "b''"
+[0m14:53:27.160337 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:53:27.161974 [info ] [MainThread]: Connection:
+[0m14:53:27.163527 [info ] [MainThread]:   host: localhost
+[0m14:53:27.165137 [info ] [MainThread]:   port: 5433
+[0m14:53:27.166977 [info ] [MainThread]:   user: postgres
+[0m14:53:27.168646 [info ] [MainThread]:   database: films
+[0m14:53:27.170382 [info ] [MainThread]:   schema: public
+[0m14:53:27.172139 [info ] [MainThread]:   search_path: None
+[0m14:53:27.174353 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:53:27.176116 [info ] [MainThread]:   sslmode: None
+[0m14:53:27.178335 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:53:27.180177 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:53:27.181592 [debug] [MainThread]: On debug: select 1 as id
+[0m14:53:27.183286 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:53:27.202158 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m14:53:27.204872 [debug] [MainThread]: On debug: Close
+[0m14:53:27.206362 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:53:27.208149 [info ] [MainThread]: [32mAll checks passed![0m
+[0m14:53:27.210512 [debug] [MainThread]: Command `dbt debug` succeeded at 14:53:27.210084 after 0.27 seconds
+[0m14:53:27.211995 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:53:27.213395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb66a2f0a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb668c0a5f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb668c0bb80>]}
+[0m14:53:27.214689 [debug] [MainThread]: Flushing usage events
+[0m14:53:31.384310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6df58a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6cacb9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6cacb8e0>]}
+
+
+============================== 14:53:31.388305 | 3ca94a21-d97b-40b3-8a07-1e74d917bade ==============================
+[0m14:53:31.388305 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:53:31.389926 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:53:31.529070 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3ca94a21-d97b-40b3-8a07-1e74d917bade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6cacbac0>]}
+[0m14:53:31.556528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3ca94a21-d97b-40b3-8a07-1e74d917bade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6c9ea020>]}
+[0m14:53:31.576845 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m14:53:31.584482 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:53:31.585938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3ca94a21-d97b-40b3-8a07-1e74d917bade', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6c126350>]}
+[0m14:53:32.534638 [debug] [MainThread]: 1699: static parser successfully parsed films__t.sql
+[0m14:53:32.598998 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.omar_test.films__t' (models/films__t.sql) depends on a node named 'films.title_basics_truncated' which was not found
+[0m14:53:32.601600 [debug] [MainThread]: Command `dbt run` failed at 14:53:32.601335 after 1.25 seconds
+[0m14:53:32.603421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6df58a00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6bd60310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7faa6bd60160>]}
+[0m14:53:32.605295 [debug] [MainThread]: Flushing usage events
+[0m14:54:30.417773 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da6f1ca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da59b3970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da59b3880>]}
+
+
+============================== 14:54:30.422047 | 11208abd-9c99-430a-af9e-5cb19746295c ==============================
+[0m14:54:30.422047 [info ] [MainThread]: Running with dbt=1.5.0
+[0m14:54:30.423661 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/sk8pr/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/mnt/c/Users/sk8pr/.dbt/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:54:30.557800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '11208abd-9c99-430a-af9e-5cb19746295c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da59b3a60>]}
+[0m14:54:30.581904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '11208abd-9c99-430a-af9e-5cb19746295c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da58ce620>]}
+[0m14:54:30.601001 [debug] [MainThread]: checksum: 4568eb639a77b8fcb3a1f4a07856f42b1ff63f1376652889143968e1dbdafbda, vars: {}, profile: , target: , version: 1.5.0
+[0m14:54:30.611058 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m14:54:30.612608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '11208abd-9c99-430a-af9e-5cb19746295c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da510e290>]}
+[0m14:54:31.536564 [debug] [MainThread]: 1699: static parser successfully parsed films__t.sql
+[0m14:54:31.638430 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.omar_test.models
+[0m14:54:31.646761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '11208abd-9c99-430a-af9e-5cb19746295c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da62b8760>]}
+[0m14:54:31.667165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '11208abd-9c99-430a-af9e-5cb19746295c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da4d6ef20>]}
+[0m14:54:31.668577 [info ] [MainThread]: Found 1 model, 0 tests, 0 snapshots, 0 analyses, 307 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics, 0 groups
+[0m14:54:31.669929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '11208abd-9c99-430a-af9e-5cb19746295c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da62d9480>]}
+[0m14:54:31.672386 [info ] [MainThread]: 
+[0m14:54:31.674174 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m14:54:31.676531 [debug] [ThreadPool]: Acquiring new postgres connection 'list_films'
+[0m14:54:31.692579 [debug] [ThreadPool]: Using postgres connection "list_films"
+[0m14:54:31.694324 [debug] [ThreadPool]: On list_films: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "sample_test_case", "target_name": "dev", "connection_name": "list_films"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m14:54:31.695566 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:54:31.712568 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m14:54:31.715521 [debug] [ThreadPool]: On list_films: Close
+[0m14:54:31.718849 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_films, now list_films_public)
+[0m14:54:31.727715 [debug] [ThreadPool]: Using postgres connection "list_films_public"
+[0m14:54:31.729593 [debug] [ThreadPool]: On list_films_public: BEGIN
+[0m14:54:31.730816 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m14:54:31.746262 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m14:54:31.747592 [debug] [ThreadPool]: Using postgres connection "list_films_public"
+[0m14:54:31.748723 [debug] [ThreadPool]: On list_films_public: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "sample_test_case", "target_name": "dev", "connection_name": "list_films_public"} */
+select
+      'films' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'films' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+  
+[0m14:54:31.753338 [debug] [ThreadPool]: SQL status: SELECT 6 in 0.0 seconds
+[0m14:54:31.756558 [debug] [ThreadPool]: On list_films_public: ROLLBACK
+[0m14:54:31.758541 [debug] [ThreadPool]: On list_films_public: Close
+[0m14:54:31.766913 [debug] [MainThread]: Using postgres connection "master"
+[0m14:54:31.768649 [debug] [MainThread]: On master: BEGIN
+[0m14:54:31.770305 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:54:31.786275 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:54:31.787873 [debug] [MainThread]: Using postgres connection "master"
+[0m14:54:31.789406 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "sample_test_case", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m14:54:31.796795 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m14:54:31.799550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '11208abd-9c99-430a-af9e-5cb19746295c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da4d43670>]}
+[0m14:54:31.801306 [debug] [MainThread]: On master: ROLLBACK
+[0m14:54:31.803813 [debug] [MainThread]: Using postgres connection "master"
+[0m14:54:31.805074 [debug] [MainThread]: On master: BEGIN
+[0m14:54:31.807896 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:54:31.809162 [debug] [MainThread]: On master: COMMIT
+[0m14:54:31.810356 [debug] [MainThread]: Using postgres connection "master"
+[0m14:54:31.811487 [debug] [MainThread]: On master: COMMIT
+[0m14:54:31.813348 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:54:31.814742 [debug] [MainThread]: On master: Close
+[0m14:54:31.816687 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:54:31.818275 [info ] [MainThread]: 
+[0m14:54:31.827067 [debug] [Thread-1 (]: Began running node model.omar_test.films__t
+[0m14:54:31.828819 [info ] [Thread-1 (]: 1 of 1 START sql view model public.films__t .................................... [RUN]
+[0m14:54:31.831362 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_films_public, now model.omar_test.films__t)
+[0m14:54:31.832958 [debug] [Thread-1 (]: Began compiling node model.omar_test.films__t
+[0m14:54:31.838212 [debug] [Thread-1 (]: Writing injected SQL for node "model.omar_test.films__t"
+[0m14:54:31.854991 [debug] [Thread-1 (]: Timing info for model.omar_test.films__t (compile): 14:54:31.834428 => 14:54:31.854485
+[0m14:54:31.856468 [debug] [Thread-1 (]: Began executing node model.omar_test.films__t
+[0m14:54:31.908496 [debug] [Thread-1 (]: Writing runtime sql for node "model.omar_test.films__t"
+[0m14:54:31.927409 [debug] [Thread-1 (]: Using postgres connection "model.omar_test.films__t"
+[0m14:54:31.928685 [debug] [Thread-1 (]: On model.omar_test.films__t: BEGIN
+[0m14:54:31.929916 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m14:54:31.944423 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m14:54:31.945941 [debug] [Thread-1 (]: Using postgres connection "model.omar_test.films__t"
+[0m14:54:31.947362 [debug] [Thread-1 (]: On model.omar_test.films__t: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "sample_test_case", "target_name": "dev", "node_id": "model.omar_test.films__t"} */
+
+  create view "films"."public"."films__t__dbt_tmp"
+    
+    
+  as (
+    SELECT
+  tconst,
+  titleType,
+  UPPER(primaryTitle) AS primaryTitle,
+  originalTitle,
+  isAdult,
+  startYear,
+  endYear,
+  runtimeMinutes,
+  genres
+FROM "films"."public"."basics"
+  );
+[0m14:54:31.953626 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m14:54:31.963357 [debug] [Thread-1 (]: Using postgres connection "model.omar_test.films__t"
+[0m14:54:31.965338 [debug] [Thread-1 (]: On model.omar_test.films__t: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "sample_test_case", "target_name": "dev", "node_id": "model.omar_test.films__t"} */
+alter table "films"."public"."films__t__dbt_tmp" rename to "films__t"
+[0m14:54:31.968560 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m14:54:31.991760 [debug] [Thread-1 (]: On model.omar_test.films__t: COMMIT
+[0m14:54:31.993859 [debug] [Thread-1 (]: Using postgres connection "model.omar_test.films__t"
+[0m14:54:31.995633 [debug] [Thread-1 (]: On model.omar_test.films__t: COMMIT
+[0m14:54:32.000658 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m14:54:32.009705 [debug] [Thread-1 (]: Using postgres connection "model.omar_test.films__t"
+[0m14:54:32.011533 [debug] [Thread-1 (]: On model.omar_test.films__t: /* {"app": "dbt", "dbt_version": "1.5.0", "profile_name": "sample_test_case", "target_name": "dev", "node_id": "model.omar_test.films__t"} */
+drop view if exists "films"."public"."films__t__dbt_backup" cascade
+[0m14:54:32.014456 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m14:54:32.017646 [debug] [Thread-1 (]: Timing info for model.omar_test.films__t (execute): 14:54:31.857473 => 14:54:32.017246
+[0m14:54:32.019275 [debug] [Thread-1 (]: On model.omar_test.films__t: Close
+[0m14:54:32.021307 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '11208abd-9c99-430a-af9e-5cb19746295c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da49271c0>]}
+[0m14:54:32.023106 [info ] [Thread-1 (]: 1 of 1 OK created sql view model public.films__t ............................... [[32mCREATE VIEW[0m in 0.19s]
+[0m14:54:32.025071 [debug] [Thread-1 (]: Finished running node model.omar_test.films__t
+[0m14:54:32.028318 [debug] [MainThread]: Using postgres connection "master"
+[0m14:54:32.029693 [debug] [MainThread]: On master: BEGIN
+[0m14:54:32.030986 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m14:54:32.045902 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m14:54:32.047410 [debug] [MainThread]: On master: COMMIT
+[0m14:54:32.048562 [debug] [MainThread]: Using postgres connection "master"
+[0m14:54:32.049983 [debug] [MainThread]: On master: COMMIT
+[0m14:54:32.052381 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m14:54:32.053822 [debug] [MainThread]: On master: Close
+[0m14:54:32.055458 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:54:32.056634 [debug] [MainThread]: Connection 'model.omar_test.films__t' was properly closed.
+[0m14:54:32.058023 [info ] [MainThread]: 
+[0m14:54:32.059394 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.38 seconds (0.38s).
+[0m14:54:32.061297 [debug] [MainThread]: Command end result
+[0m14:54:32.082136 [info ] [MainThread]: 
+[0m14:54:32.083854 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m14:54:32.085499 [info ] [MainThread]: 
+[0m14:54:32.087106 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m14:54:32.089150 [debug] [MainThread]: Command `dbt run` succeeded at 14:54:32.088878 after 1.70 seconds
+[0m14:54:32.090923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da6f1ca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da58cce20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7da58ccc40>]}
+[0m14:54:32.092481 [debug] [MainThread]: Flushing usage events
