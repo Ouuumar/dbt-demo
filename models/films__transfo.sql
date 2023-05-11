@@ -51,4 +51,4 @@ SELECT
   endYear,
   runtimeMinutes,
   genres
-FROM {{ source('title_basics_truncated') }}
+FROM {{ source('postgres','basics') }}

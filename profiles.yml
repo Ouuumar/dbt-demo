@@ -1,27 +1,14 @@
 sample_test_case:
-
+  target: dev
   outputs:
-
     dev:
       type: postgres
       threads: 1
       host: localhost
-      port: 5432
-      user: omar
+      port: 5433
+      user: postgres
       pass: root
       dbname: films
       schema: public
 
 # We can have multiple profiles for example one for dev, one for test, one for production etc.
-
-    prod:
-      type: postgres
-      threads: 4
-      host: localhost
-      port: 5432
-      user: omar
-      pass: root
-      dbname: films
-      schema: public
-
-  target: dev
